@@ -1,8 +1,9 @@
 import React from 'react'
 import AboutSection from './AboutSection'
 import HomeSection from './HomeSection'
-import Qualification from './Qualification'
-import Skills from './Skills'
+import PortfolioSection from './PortfolioSection'
+import Qualification from './QualificationSection'
+import Skills from './SkillsSection'
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <AboutSection />
       <Skills />
       <Qualification />
+      <PortfolioSection />
     </>
   )
 }
