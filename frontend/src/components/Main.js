@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutSection from './AboutSection'
+import ContactSection from './ContactSection'
 import HomeSection from './HomeSection'
 import PortfolioSection from './PortfolioSection'
 import Qualification from './QualificationSection'
@@ -13,6 +14,7 @@ export default function Main() {
       <Skills />
       <Qualification />
       <PortfolioSection />
+      <ContactSection />
     </>
   )
 }

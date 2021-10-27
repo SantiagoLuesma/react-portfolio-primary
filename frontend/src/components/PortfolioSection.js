@@ -5,7 +5,7 @@ export default function PortfolioSection() {
     <>
       <section class="portfolio section" id="portfolio">
           <h2 class="section__title">Portfolio</h2>
-          <span class="section__subtitle">Most recent work</span>
+          <span class="section__subtitle">Algunas muestras de mis conocimientos</span>
 
           <div class="portfolio__container container swiper-container">
               <div class="swiper-wrapper">
@@ -14,7 +14,7 @@ export default function PortfolioSection() {
                       <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img" />
 
                       <div class="portfolio__data">
-                          <h3 class="portfolio__title">Modern Website</h3>
+                          <h3 class="portfolio__title">Plataforma e-Learning</h3>
                           <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
                           <a href="#" class="button button--flex button--small portfolio__button">
                               Demo
@@ -28,7 +28,7 @@ export default function PortfolioSection() {
                       <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img" />
 
                       <div class="portfolio__data">
-                          <h3 class="portfolio__title">Brand Design</h3>
+                          <h3 class="portfolio__title">CRUD de proyectos y tareas</h3>
                           <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
                           <a href="#" class="button button--flex button--small portfolio__button">
                               Demo
@@ -42,7 +42,7 @@ export default function PortfolioSection() {
                       <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img" />
 
                       <div class="portfolio__data">
-                          <h3 class="portfolio__title">Online Store</h3>
+                          <h3 class="portfolio__title">Landing Page</h3>
                           <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
                           <a href="#" class="button button--flex button--small portfolio__button">
                               Demo
