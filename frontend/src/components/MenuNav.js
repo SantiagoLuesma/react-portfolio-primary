@@ -25,8 +25,8 @@ export default function MenuNav() {
                       </a>
                   </li>
                   <li className="nav__item">
-                      <a href="#services" className="nav__link">
-                          <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
+                      <a href="#qualification" className="nav__link">
+                          <i className="uil uil-briefcase-alt nav__icon"></i> Experiencia
                       </a>
                   </li>
                   <li className="nav__item">

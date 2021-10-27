@@ -3,7 +3,7 @@ import React from 'react'
 export default function Qualification() {
   return (
     <>
-      <section class="qualification section">
+      <section class="qualification section" id="qualification">
                 <h2 class="section__title">Experiencia</h2>
                 <span class="section__subtitle">Mi preparación e historial</span>
 
