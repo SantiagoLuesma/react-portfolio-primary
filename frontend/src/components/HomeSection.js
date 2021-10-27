@@ -11,8 +11,8 @@ export default function HomeSection() {
                           <i class="uil uil-linkedin-alt"></i>
                       </a>
 
-                      <a href="https://dribbble.com/" target="_blank" class="home__social-icon">
-                          <i class="uil uil-dribbble"></i>
+                      <a href="https://youtube.com/" target="_blank" class="home__social-icon">
+                          <i class="uil uil-youtube"></i>
                       </a>
 
                       <a href="https://github.com/" target="_blank" class="home__social-icon">
@@ -39,11 +39,11 @@ export default function HomeSection() {
                   </div> */}
 
                   <div class="home__data">
-                      <h1 class="home__title">Hi, I'm Santiago</h1>
-                      <h3 class="home__subtitle">Frontend developer</h3>
-                      <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam maiores quidem nisi amet nihil, voluptates obcaecati qui.</p>
+                      <h1 class="home__title">Hola, soy Santiago</h1>
+                      <h3 class="home__subtitle">Desarrollador frontend</h3>
+                      <p class="home__description">Autodidacta, emprendedor y fanático de aprender cosas nuevas.</p>
                       <a href="#contact" class="button button--flex">
-                          Contact Me <i class="uil uil-message button__icon"></i>
+                          Hablemos <i class="uil uil-message button__icon"></i>
                       </a>
                   </div>
               </div>
