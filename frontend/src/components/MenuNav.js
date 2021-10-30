@@ -1,11 +1,12 @@
 import React from 'react';
 
 export default function MenuNav() {
+
   return (
     <>
-      <header className="header" id="header">
+    <header className="header" id="header">
         <nav className="nav container">
-          <a href="#" className="nav__logo">Santiago Luesma</a>
+          <a href="/" className="nav__logo">LuesmaDev</a>
 
           <div className="nav__menu" id="nav-menu">
               <ul className="nav__list grid">
@@ -45,7 +46,10 @@ export default function MenuNav() {
 
           <div className="nav__btns">
               {/* - Theme change button  */}
-              <i className="uil uil-moon change-theme" id="theme-button"></i>
+              <i
+                className="uil uil-moon change-theme"
+                id="theme-button"
+              ></i>
               <div className="nav__toggle" id="nav-toggle">
                   <i className="uil uil-apps"></i>
               </div>
@@ -54,4 +58,5 @@ export default function MenuNav() {
       </header>
     </>
   )
+
 }

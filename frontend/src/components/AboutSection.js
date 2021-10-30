@@ -17,7 +17,7 @@ export default function AboutSection() {
                 <div class="about__info">
                     <div>
                         <span class="about__info-title">1</span>
-                        <span class="about__info-name">Años de <br /> experiencia</span>
+                        <span class="about__info-name">Año de <br /> experiencia</span>
                     </div>
 
                     <div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
                 </div>
 
                 <div class="about__buttons">
-                    <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                    <a download="" href="../assets/Santiago Luesma - Desarrollador de Software - seluesma@gmail.com.pdf" class="button button--flex">
                         Descargar CV<i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>

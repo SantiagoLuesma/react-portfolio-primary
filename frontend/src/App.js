@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import Footer from './components/Footer';
+import React from 'react';
+import MenuNav from './components/MenuNav';
 import Main from './components/Main';
-import MenuNav from './components/MenuNav'
+import Footer from './components/Footer';
 
 export default function App() {
   return (
