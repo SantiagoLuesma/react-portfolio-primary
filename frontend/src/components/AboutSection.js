@@ -1,12 +1,55 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import SectionTitle from './SectionTitle';
+
+const StyledSection = styled.section`
+  padding: 2rem 0 4rem;
+  .container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  .grid{
+    display: grid;
+    gap: 1.5rem;
+  }
+  .about__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+  }
+  .about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  @media screen and (min-width: 768px){
+    padding: 6rem 0 2rem;
+    .about__container{
+        column-gap: 5rem;
+    }
+    .about__img{
+        width: 350px;
+    }
+    .about__description{
+        text-align: initial;
+    }
+  }
+
+  @media screen and (min-width: 568px){
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  }
+`;
 
 export default function AboutSection() {
   return (
-    <>
-      <section class="about section" id="about">
+      <StyledSection id="about">
 
-        <h2 class="section__title">Sobre mí</h2>
-        <span class="section__subtitle">Te cuento un poco sobre mí</span>
+        <SectionTitle subtitle="Te cuento un poco sobre mí" title="Sobre mí" />
 
         <div class="about__container container grid">
             <img src="assets/img/about.jpg" alt="" class="about__img" />
@@ -38,7 +81,6 @@ export default function AboutSection() {
                 </div>
             </div>
         </div>
-      </section>
-    </>
+      </StyledSection>
   )
 }

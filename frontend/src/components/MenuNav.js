@@ -1,48 +1,60 @@
 import React from 'react';
+import styled from 'styled-components';
+import Menu from './Menu';
+
+const StyledHeader = styled.header`
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    @media screen and (min-width: 768px){
+        top: 0;
+        bottom: initial;
+        padding: 0 1rem;
+    }
+    @media screen and (min-width: 1024px){
+        padding: 0;
+    }
+    nav {
+        max-width: 968px;
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 768px;
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+        @media screen and (min-width: 768px){
+            height: calc(var(--header-height) + 1.5rem);
+            column-gap: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 350px){
+            margin-left: var(--mb-1);
+            margin-right: var(--mb-1);
+        }
+        a {
+            color: var(--title-color);
+            font-weight: var(--font-medium);
+            &:hover {
+                color: var(--first-color);
+            }
+        }
+    }
+`;
+
 
 export default function MenuNav() {
 
   return (
-    <>
-    <header className="header" id="header">
-        <nav className="nav container">
-          <a href="/" className="nav__logo">LuesmaDev</a>
+    <StyledHeader id="header">
+        <nav>
+          <a href="/">LuesmaDev</a>
 
-          <div className="nav__menu" id="nav-menu">
-              <ul className="nav__list grid">
-                  <li className="nav__item">
-                      <a href="#home" className="nav__link active-link">
-                          <i className="uil uil-estate nav__icon"></i> Inicio
-                      </a>
-                  </li>
-                  <li className="nav__item">
-                      <a href="#about" className="nav__link">
-                          <i className="uil uil-user nav__icon"></i> Sobre mí
-                      </a>
-                  </li>
-                  <li className="nav__item">
-                      <a href="#skills" className="nav__link">
-                          <i className="uil uil-file-alt nav__icon"></i> Habilidades
-                      </a>
-                  </li>
-                  <li className="nav__item">
-                      <a href="#qualification" className="nav__link">
-                          <i className="uil uil-briefcase-alt nav__icon"></i> Experiencia
-                      </a>
-                  </li>
-                  <li className="nav__item">
-                      <a href="#portfolio" className="nav__link">
-                          <i className="uil uil-scenery nav__icon"></i> Portfolio
-                      </a>
-                  </li>
-                  <li className="nav__item">
-                      <a href="#contact" className="nav__link">
-                          <i className="uil uil-message nav__icon"></i> Contacto
-                      </a>
-                  </li>
-                  </ul>
-                  <i className="uil uil-times nav__close" id="nav-close"></i>
-          </div>
+          <Menu />
 
           <div className="nav__btns">
               {/* - Theme change button  */}
@@ -55,8 +67,7 @@ export default function MenuNav() {
               </div>
           </div>
         </nav>
-      </header>
-    </>
+      </StyledHeader>
   )
 
 }

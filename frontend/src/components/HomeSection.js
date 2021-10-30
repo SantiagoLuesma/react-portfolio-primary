@@ -1,24 +1,64 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import HomeSectionSocial from './HomeSectionSocial';
+import HomeSectionData from './HomeSectionData';
+import HomeSectionScroll from './HomeSectionScroll';
+
+const StyledSection = styled.section`
+  padding: 2rem 0 4rem;
+  .home__container{
+    gap:1rem
+  }
+  .container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  .grid{
+    display: grid;
+    gap: 1.5rem;
+  }
+  .home__content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px){
+    padding: 6rem 0 2rem;
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__container{
+        row-gap: 5rem;
+    }
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+  }
+  @media screen and (max-width: 350px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+  }
+  @media screen and (min-width: 568px){
+    .home__content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+  }
+`;
 
 export default function HomeSection() {
   return (
-    <>
-      <section class="home section" id="home">
-          <div class="home__container container grid">
-              <div class="home__content grid">
-                  <div class="home__social">
-                      <a href="https://linkedin.com/" target="_blank" class="home__social-icon">
-                          <i class="uil uil-linkedin-alt"></i>
-                      </a>
-
-                      <a href="https://youtube.com/" target="_blank" class="home__social-icon">
-                          <i class="uil uil-youtube"></i>
-                      </a>
-
-                      <a href="https://github.com/" target="_blank" class="home__social-icon">
-                          <i class="uil uil-github-alt"></i>
-                      </a>
-                  </div>
+      <StyledSection className="home" id="home">
+          <div className="home__container container grid">
+              <div className="home__content grid">
+                  <HomeSectionSocial />
 
                   {/* <div class="home__img">
                       <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -38,25 +78,11 @@ export default function HomeSection() {
                       </svg>
                   </div> */}
 
-                  <div class="home__data">
-                      <h1 class="home__title">Hola, soy Santiago</h1>
-                      <h3 class="home__subtitle">Desarrollador frontend</h3>
-                      <p class="home__description">Autodidacta, emprendedor y fanático de aprender cosas nuevas.</p>
-                      <a href="#contact" class="button button--flex">
-                          Hablemos <i class="uil uil-message button__icon"></i>
-                      </a>
-                  </div>
+                  <HomeSectionData />
               </div>
 
-              <div class="home__scroll">
-                  <a href="#about" class="home__scroll-button button--flex">
-                      <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                      <span class="home__scroll-name">Scroll down</span>
-                      <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                  </a>
-              </div>
+              <HomeSectionScroll />
           </div>
-      </section>
-    </>
+      </StyledSection>
   )
 }

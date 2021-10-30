@@ -1,7 +1,0 @@
-const lightTheme = {
-
-}
-
-const  darkTheme = {
-  
-}
