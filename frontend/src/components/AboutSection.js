@@ -23,6 +23,46 @@ const StyledSection = styled.section`
     text-align: center;
     margin-bottom: var(--mb-2-5);
   }
+  .about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+  }
+  .about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  .about__info-name{
+    font-size: var(--smaller-font-size);
+  }
+  .about__info-title,
+  .about__info-name{
+      display: block;
+      text-align: center;
+  }
+  .about__buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    display: inline-flex;
+    align-items: center;
+    &:hover {
+      background-color: var(--first-color-alt);
+    }
+  }
+  .button__icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+  }
 
   @media screen and (min-width: 768px){
     padding: 6rem 0 2rem;
@@ -34,6 +74,21 @@ const StyledSection = styled.section`
     }
     .about__description{
         text-align: initial;
+    }
+    .about__info{
+        justify-content: space-between;
+    }
+    .about__info-name{
+    font-size: var(--smaller-font-size);
+    }
+
+    .about__info-title,
+    .about__info-name{
+        display: block;
+        text-align: center;
+    }
+    .about__buttons{
+        justify-content: initial;
     }
   }
 

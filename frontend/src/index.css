@@ -415,32 +415,32 @@ img{
     margin-bottom: var(--mb-2-5);
 } */
 
-.about__info{
+/* .about__info{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
-}
+} */
 
-.about__info-title{
+/* .about__info-title{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
-}
+} */
 
-.about__info-name{
+/* .about__info-name{
     font-size: var(--smaller-font-size);
-}
+} */
 
-.about__info-title,
+/* .about__info-title,
 .about__info-name{
     display: block;
     text-align: center;
-}
+} */
 
-.about__buttons{
+/* .about__buttons{
     display: flex;
     justify-content: center;
-}
+} */
 
 /*==================== SKILLS ====================*/
 .skills__container{
@@ -1154,13 +1154,13 @@ img{
         text-align: initial;
     } */
 
-    .about__info{
+    /* .about__info{
         justify-content: space-between;
-    }
+    } */
 
-    .about__buttons{
+    /* .about__buttons{
         justify-content: initial;
-    }
+    } */
 
     .qualification__tabs{
         justify-content: center;
